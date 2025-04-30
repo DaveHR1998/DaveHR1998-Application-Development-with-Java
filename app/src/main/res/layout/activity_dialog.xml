@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Button to show Alert Dialog -->
+    <Button
+        android:id="@+id/showAlertDialogButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Show Alert Dialog" />
+
+    <!-- Button to show Single Choice Dialog -->
+    <Button
+        android:id="@+id/showSingleChoiceDialogButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Show Single Choice Dialog" />
+
+    <!-- Button to show Multi Choice Dialog -->
+    <Button
+        android:id="@+id/showMultiChoiceDialogButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Show Multi Choice Dialog" />
+
+    <!-- Button to show Date Picker Dialog -->
+    <Button
+        android:id="@+id/showDatePickerDialogButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Show Date Picker Dialog" />
+
+    <!-- Button to show Time Picker Dialog -->
+    <Button
+        android:id="@+id/showTimePickerDialogButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Show Time Picker Dialog" />
+
+</LinearLayout>

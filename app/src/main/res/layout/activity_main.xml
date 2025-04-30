@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <Button
+        android:id="@+id/btnSimple"
+        android:layout_width="150dp"
+        android:layout_height="62dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="248dp"
+        android:text="Simple ListView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnArrayAdapter"
+        android:layout_width="150dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="248dp"
+        android:text="ArrayAdapter ListView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.776"
+        app:layout_constraintStart_toEndOf="@+id/btnSimple"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnCustom"
+        android:layout_width="143dp"
+        android:layout_height="59dp"
+        android:layout_marginStart="12dp"
+        android:text="Custom ListView"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnSimple"
+        app:layout_constraintVertical_bias="0.045" />
+
+    <Button
+        android:id="@+id/btnBaseAdapter"
+        android:layout_width="145dp"
+        android:layout_height="58dp"
+        android:text="BaseAdapter ListView"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.766"
+        app:layout_constraintStart_toEndOf="@+id/btnCustom"
+        app:layout_constraintTop_toBottomOf="@+id/btnArrayAdapter"
+        app:layout_constraintVertical_bias="0.037" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="352dp"
+        android:layout_height="37dp"
+        android:text="List View and Dialogue Tutorial"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.434"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.206" />
+
+    <Button
+        android:id="@+id/showDialogActivityButton"
+        android:layout_width="140dp"
+        android:layout_height="65dp"
+        android:text="DIalogue section"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:layout_constraintVertical_bias="0.496" />
+
+    <Button
+        android:id="@+id/showProgressBarButton"
+        android:layout_width="144dp"
+        android:layout_height="67dp"
+        android:layout_marginEnd="12dp"
+        android:text="Show Progress Bars"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.915"
+        app:layout_constraintStart_toEndOf="@+id/showDialogActivityButton"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.636" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

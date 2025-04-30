@@ -1,0 +1,55 @@
+package com.smu.fullapplication;
+
+import android.content.Intent;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+import com.smu.fullapplication.ArrayAdapterActivity;
+import com.smu.fullapplication.BaseAdapterListViewActivity;
+import com.smu.fullapplication.CustomListViewActivity;
+import com.smu.fullapplication.R;
+import com.smu.fullapplication.SimpleListViewActivity;
+
+public class MainActivity extends AppCompatActivity {
+
+    Button btnSimple, btnArrayAdapter, btnCustom, btnBaseAdapter,showProgressBarButton;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+
+        btnSimple = findViewById(R.id.btnSimple);
+        btnArrayAdapter = findViewById(R.id.btnArrayAdapter);
+        btnCustom = findViewById(R.id.btnCustom);
+        btnBaseAdapter = findViewById(R.id.btnBaseAdapter);
+
+        btnSimple.setOnClickListener(v -> startActivity(new Intent(this, SimpleListViewActivity.class)));
+        btnArrayAdapter.setOnClickListener(v -> startActivity(new Intent(this, ArrayAdapterActivity.class)));
+        btnCustom.setOnClickListener(v -> startActivity(new Intent(this, CustomListViewActivity.class)));
+        btnBaseAdapter.setOnClickListener(v -> startActivity(new Intent(this, BaseAdapterListViewActivity.class)));
+
+
+        Button showDialogActivityButton;
+
+// Inside onCreate method
+        showDialogActivityButton = findViewById(R.id.showDialogActivityButton);
+        showDialogActivityButton.setOnClickListener(v -> {
+            Intent intent = new Intent(MainActivity.this, DialogActivity.class);
+            startActivity(intent);
+        });
+
+
+        showProgressBarButton = findViewById(R.id.showProgressBarButton);
+        showProgressBarButton.setOnClickListener(v -> {
+            Intent intent = new Intent(MainActivity.this, ProgressBarActivity.class);
+            startActivity(intent);
+        });
+
+
+    }
+
+}
