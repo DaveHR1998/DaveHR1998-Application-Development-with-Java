@@ -73,7 +73,3 @@ The project includes basic instrumented and unit tests:
 ## Contributing
 
 This project is for educational purposes. Feel free to fork and expand upon it for your own learning.
-
-## License
-
-[Add your license information here]
