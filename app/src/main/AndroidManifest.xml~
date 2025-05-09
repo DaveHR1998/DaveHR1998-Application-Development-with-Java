@@ -37,8 +37,6 @@
 
         <activity android:name=".StudentDetailActivity" />
 
-        <activity android:name=".adapter.FragmentDemoActivity"/>
-
     </application>
 
 

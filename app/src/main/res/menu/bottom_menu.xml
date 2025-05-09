@@ -1,0 +1,15 @@
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<item
+    android:id="@+id/nav_overlay"
+    android:icon="@drawable/baseline_home_24"
+    android:title="Overlay" />
+<item
+    android:id="@+id/nav_slider"
+    android:icon="@drawable/baseline_person_24"
+    android:title="Slider" />
+<item
+    android:id="@+id/nav_master_detail"
+    android:icon="@drawable/ic_android_black_24dp"
+    android:title="Master Detail" />
+</menu>

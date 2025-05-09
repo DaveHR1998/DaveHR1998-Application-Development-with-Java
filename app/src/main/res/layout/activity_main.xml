@@ -89,6 +89,18 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.636" />
 
+    <Button
+        android:id="@+id/fragment_id"
+        android:layout_width="145dp"
+        android:layout_height="60dp"
+        android:text="Button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.041"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/showDialogActivityButton"
+        app:layout_constraintVertical_bias="0.179" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 
