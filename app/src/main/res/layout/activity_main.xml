@@ -8,6 +8,18 @@
     android:padding="16dp">
 
     <Button
+        android:id="@+id/sqlite_id"
+        android:layout_width="145dp"
+        android:layout_height="60dp"
+        android:text="Sqlite Tutorial"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.051"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fragment_id"
+        app:layout_constraintVertical_bias="0.333" />
+
+    <Button
         android:id="@+id/btnSimple"
         android:layout_width="150dp"
         android:layout_height="62dp"
@@ -93,13 +105,25 @@
         android:id="@+id/fragment_id"
         android:layout_width="145dp"
         android:layout_height="60dp"
-        android:text="Button"
+        android:text="Fragment Tutorial"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.041"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/showDialogActivityButton"
         app:layout_constraintVertical_bias="0.179" />
+
+    <Button
+        android:id="@+id/showStorageActivityButton"
+        android:layout_width="144dp"
+        android:layout_height="67dp"
+        android:text="Show Storage Demo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.819"
+        app:layout_constraintStart_toEndOf="@+id/showDialogActivityButton"
+        app:layout_constraintTop_toBottomOf="@+id/showProgressBarButton"
+        app:layout_constraintVertical_bias="0.134" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

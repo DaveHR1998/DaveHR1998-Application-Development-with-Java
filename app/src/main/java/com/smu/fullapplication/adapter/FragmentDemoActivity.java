@@ -28,16 +28,14 @@ public class FragmentDemoActivity extends AppCompatActivity {
                 getSupportFragmentManager().beginTransaction()
                         .replace(R.id.fragmentContainer, frag)
                         .commit();
+//                FragmentManager fragmentManager = getSupportFragmentManager();
+//                FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
 //
-                FragmentManager fragmentManager = getSupportFragmentManager();
-                FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-
-                fragmentTransaction.add(R.id.fragmentContainer, frag);
-                fragmentTransaction.commit();
+//                fragmentTransaction.add(R.id.fragmentContainer, frag);
+//                fragmentTransaction.commit();
             }
             return true;
         });
-
         // Load first fragment
         nav.setSelectedItemId(R.id.nav_overlay);
     }

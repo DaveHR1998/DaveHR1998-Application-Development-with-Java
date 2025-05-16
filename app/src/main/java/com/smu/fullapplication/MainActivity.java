@@ -13,10 +13,12 @@ import com.smu.fullapplication.CustomListViewActivity;
 import com.smu.fullapplication.R;
 import com.smu.fullapplication.SimpleListViewActivity;
 import com.smu.fullapplication.adapter.FragmentDemoActivity;
+import com.smu.fullapplication.database.StorageDemoActivity;
+import com.smu.fullapplication.database.SqliteActivity;
 
 public class MainActivity extends AppCompatActivity {
 
-    Button btnSimple, btnArrayAdapter, btnCustom, btnBaseAdapter,showProgressBarButton,Fragment_Button;
+    Button btnSimple, btnArrayAdapter, btnCustom, btnBaseAdapter,showProgressBarButton,Fragment_Button,Storage_Button,Sqlite_Button;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -53,6 +55,18 @@ public class MainActivity extends AppCompatActivity {
         Fragment_Button = findViewById(R.id.fragment_id);
         Fragment_Button.setOnClickListener(v -> {
             Intent intent = new Intent(MainActivity.this, FragmentDemoActivity.class);
+            startActivity(intent);
+        });
+
+        Storage_Button = findViewById(R.id.showStorageActivityButton);
+        Storage_Button.setOnClickListener(v -> {
+            Intent intent = new Intent(MainActivity.this, StorageDemoActivity.class);
+            startActivity(intent);
+        });
+
+        Sqlite_Button = findViewById(R.id.sqlite_id);
+        Sqlite_Button.setOnClickListener(v -> {
+            Intent intent = new Intent(MainActivity.this, SqliteActivity.class);
             startActivity(intent);
         });
 
