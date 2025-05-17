@@ -8,6 +8,18 @@
     android:padding="16dp">
 
     <Button
+        android:id="@+id/room_id"
+        android:layout_width="145dp"
+        android:layout_height="60dp"
+        android:text="Room Tutorial"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.935"
+        app:layout_constraintStart_toEndOf="@+id/sqlite_id"
+        app:layout_constraintTop_toBottomOf="@+id/showStorageActivityButton"
+        app:layout_constraintVertical_bias="0.333" />
+
+    <Button
         android:id="@+id/sqlite_id"
         android:layout_width="145dp"
         android:layout_height="60dp"

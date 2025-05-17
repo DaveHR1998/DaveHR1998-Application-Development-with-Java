@@ -15,10 +15,11 @@ import com.smu.fullapplication.SimpleListViewActivity;
 import com.smu.fullapplication.adapter.FragmentDemoActivity;
 import com.smu.fullapplication.database.StorageDemoActivity;
 import com.smu.fullapplication.database.SqliteActivity;
+import com.smu.fullapplication.room.RoomActivity;
 
 public class MainActivity extends AppCompatActivity {
 
-    Button btnSimple, btnArrayAdapter, btnCustom, btnBaseAdapter,showProgressBarButton,Fragment_Button,Storage_Button,Sqlite_Button;
+    Button btnSimple, btnArrayAdapter, btnCustom, btnBaseAdapter,showProgressBarButton,Fragment_Button,Storage_Button,Sqlite_Button,Room_Button;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -67,6 +68,12 @@ public class MainActivity extends AppCompatActivity {
         Sqlite_Button = findViewById(R.id.sqlite_id);
         Sqlite_Button.setOnClickListener(v -> {
             Intent intent = new Intent(MainActivity.this, SqliteActivity.class);
+            startActivity(intent);
+        });
+
+        Room_Button = findViewById(R.id.room_id);
+        Room_Button.setOnClickListener(v -> {
+            Intent intent = new Intent(MainActivity.this, RoomActivity.class);
             startActivity(intent);
         });
 

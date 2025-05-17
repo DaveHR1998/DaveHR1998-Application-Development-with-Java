@@ -4,7 +4,9 @@ import android.app.AlertDialog;
 import android.database.Cursor;
 import android.os.Bundle;
 import android.widget.Button;
+import android.widget.CursorAdapter;
 import android.widget.EditText;
+import android.widget.ListView;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -56,7 +58,18 @@ public class SqliteActivity extends AppCompatActivity {
             dlg.setMessage(builder.toString());
             dlg.setPositiveButton("OK", null);
             dlg.show();
+
+//            if (cursor == null || cursor.getCount() == 0) {
+//                Toast.makeText(this, "No data", Toast.LENGTH_SHORT).show();
+//                return;
+//            }
+//
+//            CursorAdapter cursorAdapter = new PersonCursorAdapter(this, cursor, 0);
+//            ListView listView = findViewById(R.id.listView);
+//            listView.setAdapter(cursorAdapter);
         });
+
+
 
         btnUpdate.setOnClickListener(v -> {
             int id = Integer.parseInt(idInput.getText().toString());

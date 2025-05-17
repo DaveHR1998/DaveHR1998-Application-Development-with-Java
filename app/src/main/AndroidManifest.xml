@@ -40,7 +40,10 @@
         <activity android:name=".adapter.FragmentDemoActivity"/>
 
         <activity android:name=".database.StorageDemoActivity" />
+
         <activity android:name=".database.SqliteActivity" />
+
+        <activity android:name=".room.RoomActivity" />
 
 
 

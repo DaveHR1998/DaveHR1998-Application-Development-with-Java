@@ -18,22 +18,27 @@ public class FragmentDemoActivity extends AppCompatActivity {
 
         BottomNavigationView nav = findViewById(R.id.bottomNavigation);
         nav.setOnItemSelectedListener(item -> {
-            Fragment frag = null;
-            int id = item.getItemId();
-            if (id == R.id.nav_overlay) frag = new com.smu.fullapplication.adapter.OverlayFragment();
-            else if (id == R.id.nav_slider) frag = new SliderFragment();
-            else if (id == R.id.nav_master_detail) frag = new MasterDetailFragment();
-            if (frag != null) {
+            Fragment frag = new OverlayFragment();
+            FragmentManager fragmentManager = getSupportFragmentManager();
+                FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
 
-                getSupportFragmentManager().beginTransaction()
-                        .replace(R.id.fragmentContainer, frag)
-                        .commit();
-//                FragmentManager fragmentManager = getSupportFragmentManager();
-//                FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+                fragmentTransaction.add(R.id.fragmentContainer, frag);
+                fragmentTransaction.commit();
+            int id = item.getItemId();
+//            if (id == R.id.nav_overlay) frag = new com.smu.fullapplication.adapter.OverlayFragment();
+//            else if (id == R.id.nav_slider) frag = new SliderFragment();
+//           else if (id == R.id.nav_master_detail) frag = new MasterDetailFragment();
+//            if (frag != null) {
 //
-//                fragmentTransaction.add(R.id.fragmentContainer, frag);
-//                fragmentTransaction.commit();
-            }
+//                getSupportFragmentManager().beginTransaction()
+//                        .replace(R.id.fragmentContainer, frag)
+//                        .commit();
+////                FragmentManager fragmentManager = getSupportFragmentManager();
+////                FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+////
+////                fragmentTransaction.add(R.id.fragmentContainer, frag);
+////                fragmentTransaction.commit();
+//            }
             return true;
         });
         // Load first fragment
